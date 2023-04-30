@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Обратный звонок</title>
+        <meta charset="UTF-8">
+        <style>
+@font-face {
+	font-family: 'Golos';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/GolosUI-Regular.woff2') format('woff2'), 
+		url('fonts/GolosUI-Regular.woff') format('woff'),
+		url('fonts/GolosUI-Regular.ttf') format('ttf'),
+		url('fonts/GolosUI-Regular.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'Golos';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/GolosUI-Bold.woff2') format('woff2'), 
+		url('fonts/GolosUI-Bold.woff') format('woff'),
+		url('fonts/GolosUI-Bold.ttf') format('ttf'),
+		url('fonts/GolosUI-Bold.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'Golos';
+	font-style: italic;
+	font-weight: normal;
+	src: url('fonts/GolosUI-Medium.woff2') format('woff2'), 
+		url('fonts/GolosUI-Medium.woff') format('woff'),
+		url('fonts/GolosUI-Medium.ttf') format('ttf'),
+		url('fonts/GolosUI-Medium.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'SourceSans3';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/SourceSans3-Regular.woff2') format('woff2'), 
+		url('fonts/SourceSans3-Regular.woff') format('woff'),
+		url('fonts/SourceSans3-Regular.ttf') format('ttf'),
+		url('fonts/SourceSans3-Regular.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'SourceSans3';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/SourceSans3-Bold.woff2') format('woff2'), 
+		url('fonts/SourceSans3-Bold.woff') format('woff'),
+		url('fonts/SourceSans3-Bold.ttf') format('ttf'),
+		url('fonts/SourceSans3-Bold.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'SourceSans3';
+	font-style: italic;
+	font-weight: normal;
+	src: url('fonts/SourceSans3-Italic.woff2') format('woff2'), 
+		url('fonts/SourceSans3-Italic.woff') format('woff'),
+		url('fonts/SourceSans3-Italic.ttf') format('ttf'),
+		url('fonts/SourceSans3-Italic.eot') format('eot');
+}
+
+*{
+    font-family: 'Golos';
+	box-sizing: border-box;
+
+}
+
+body{
+	background-color: #F7F7F7;
+}
+
+.head{
+	width: 100%;
+	text-align: center;
+	empty-cells: hide;
+}
+
+h1{
+    font-family: 'SourceSans3';
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    font-family: 'SourceSans3';
+    text-align: center;
+}
+
+h3{
+	transition: 1s;
+}
+
+h3:hover{
+	text-shadow: 2px 3px 30px black;
+}
+
+form {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+  }
+  input {
+	width: 100%;
+	height: 42px;
+	padding-left: 10px;
+	border: 2px solid black;
+	border-radius: 20px;
+	outline: none;
+	background: white;
+	color: black;
+  }
+  button {
+	position: absolute; 
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background: black;
+	border-radius: 0px 20px 20px 0;
+	cursor: pointer;
+  }
+  button:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	font-size: 16px;
+	color: white;
+  }
+  .seryi{
+	color:#7d7f7d
+}
+
+a:link{
+    color:black;
+    text-decoration: none;
+	transition: 0.5s;
+
+}
+
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+	color:#af4425;
+	text-shadow: 2px 3px 30px black;
+}
+
+.table_call{
+	width: 100%;
+	text-align: center;
+	empty-cells: hide;
+}
+
+.width_table_1_1{
+	width: 5%;
+	scale: 70%;
+}
+
+.width_table_1_2{
+	width: 75%;
+}
+
+.width_table_1_3{
+	width: 10%;
+}
+
+.head{
+	border-spacing: 10%;
+}
+
+.size_call{
+	font-size: 10pt;
+	font-style: italic;
+}
+
+.table_41{
+	width: 25%;
+	transition: 1s;
+}
+
+.table_41:hover{
+	text-shadow: 2px 3px 30px black;
+}
+
+.table_down{
+	margin-top: 3%;
+}
+
+.table_1tr{
+	text-align: left;
+}
+
+.pt7{
+font-size: 7pt;
+}
+
+.img_shop{
+	width: 20%;
+}
+
+.bold{
+	font-weight: bold;
+}
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+ <table class="head">
+        <tr>
+        <td class="width_table_1_1" rowspan="2"><a href="index.html"><img src="images/icon.png" alt="Tobacco shop" class="img_head"/></a></td>
+        <td class="width_table_1_2" rowspan="2">
+            <form action="index.html">
+            <input type="text" placeholder="Что хотите найти?">
+            <button type="submit"></button>
+          </form></td>
+        <td class="width_table_1_3"><a href="call.html"><i>+375 44 5541505</i></a></td>
+        <td class="width_table_1_1" rowspan="2"><a href="cabinet.html"><img src="images/people.png" alt="Личный кабинет" class="img_head"/></a></td>
+        <td class="width_table_1_1" rowspan="2"><a href=""><img src="images/star.png" alt="Избранное" class="img_head"/></a></td>    
+        <td class="width_table_1_1" rowspan="2"><a href=""><img src="images/telega.png" alt="Корзина" class="img_head"/></a></td> 
+        </tr>
+        <tr>
+            <td class="width_table_1_3"><a class ="seryi size_call" href="call.html">Обратный звонок</a></td>
+        </tr>
+       </table>  
+
+       <table class="table_call">
+        <tr><h1>Обратный звонок</h1></tr>
+        <tr><span class="seryi"><h2>Оставьте свои контакты и наш менеджер свяжется с вами</h2></span></tr>
+        <tr><form action="index.html" method="get">
+                    <input text placeholder="Ваше имя"><br>
+                    <input tel placeholder="Телефон"><br>
+                    <input type=submit value = "Оставить заявку" href="index.html">
+                    </form></tr>
+               </table>
+
+               <table class="head table_down">
+                <tr>
+                    <td class="table_1tr table_41"><img src="images/icon.png" alt="Tobacco shop" class="img_shop"/></td>
+                    <td class="table_41"><a href="index.html#glav">Главная</a></td>
+                    <td class="table_41">О компании</td>
+                    <td class="table_41">Политика конфенциальности</td>
+                </tr>
+                <tr>
+                    <td class="table_1tr table_41"><span class="pt7">Все права защищены <b>2023</b></span></td>
+                    <td class="table_41"><a href="index.html#pod"><span class="bold">POD</span> системы</a></td>
+                   <td class="table_41">Доставка</td>
+                   <td class="table_41">Карта сайта</td>
+                </tr>
+                <tr>
+                    <td class="table_1tr table_41"><span class="pt7">Сайт предначен для лиц старше</span></td>
+                    <td class="table_41"><a href="index.html#tabac">Сигареты</a></td>
+                    <td class="table_41">Оплата</td>
+                    <td class="table_41">Лицензия</td>
+                </tr>
+                <tr>
+                    <td class="table_1tr table_41"><span class="pt7"><span class="bold">18</span> лет</span></td>
+                    <td class="table_41"><a href="index.html#zhizha">Жидкости</a></td>
+                    <td class="table_41">Личный кабинет</td>
+                    <td class="table_41">Лицензия</td>
+                </tr>
+                <tr>
+                    <td class="table_1tr table_41"><a href="tel:+375445541505"><span class="pt7"><span class="bold">+375 44 55 41 505</span></span></a></td>
+                    <td class="table_41"><a href="#">Аксессуары</a></td>
+                    <td class="table_41">Избранное</td>
+                    <td class="table_41">Реквизиты</td>
+                </tr>
+                <tr>
+                   <td class="table_1tr table_41"><a href="mailto:et17y@vk.com"><span class="pt7"><span class="bold">et17y@vk.com</span></span></a></td> 
+                   <td class="table_41"><b>IQOS, GLO</b></td>
+                   <td class="table_41">Контакты</td>
+                   <td class="table_41">Как проехать</td>
+                </tr>
+                <tr>
+                    <td class="table_1tr table_41"></td>
+                    <td class="table_41">Стики</td>
+                    <td class="table_41">Новости</td>
+                    <td class="table_41"></td>
+                </tr>
+            </table>
+    </body>
+</html>
