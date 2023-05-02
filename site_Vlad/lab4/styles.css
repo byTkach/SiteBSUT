@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Inter-Regular.woff2') format('woff2'), 
+        url('fonts/Inter-Regular.woff') format('woff'),
+        url('fonts/Inter-Regular.ttf') format('ttf'),
+        url('fonts/Inter-Regular.eot') format('eot'),
+        url('fonts/Inter-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Inter-Bold.woff2') format('woff2'), 
+        url('fonts/Inter-Bold.woff') format('woff'),
+        url('fonts/Inter-Bold.ttf') format('ttf'),
+        url('fonts/Inter-Bold.eot') format('eot'),
+        url('fonts/Inter-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: normal;
+    src: url('fonts/Inter-Italic.woff2') format('woff2'), 
+        url('fonts/Inter-Italic.woff') format('woff'),
+        url('fonts/Inter-Italic.ttf') format('ttf'),
+        url('fonts/Inter-Italic.eot') format('eot'),
+        url('fonts/Inter-Italic.svg') format('svg');
+}
+
+*{
+  font-family: 'Inter'; 
+  color: white; 
+  font-size: 14pt;
+}
+
+body{
+    background-image: url(images/fon.png);
+    background-repeat: no-repeat;
+    background-color: #151516;
+    background-size: 100%;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#a450a7;
+    text-shadow: 2px 3px 30px white;
+}
+
+.head{
+    max-width: 70%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.ind,.okl,.det,.gall{
+    margin-right: 10%;
+}
+
+.logo{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+}
+h1 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-style: bold;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.opis{
+    max-width: 100%;
+}
+
+.adr,.number,.work{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.footer{
+    max-width: 100%;
+    margin-left: 0.5%;
+    margin-top: 2%;
+}
+
+.center1{
+    text-align: center;
+}
+
+.plen,.c_plen,.desig,.okle{
+    float: left;   
+    margin-bottom: 2%;
+}
+
+.plen,.c_plen,.desig{
+    margin-right: 3%;
+}
+
+.pink:hover{
+    transition: 1s;
+    color: #a450a7;
+    text-shadow: 2px 3px 30px white;
+    transition: 1s;
+}
+
+h1{
+    text-align: center;
+    font-size: 32pt;
+    width: 50%;
+    margin-left: 25%;
+    /* margin-right: %; */
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+
+.cent_car_table{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    border-collapse:collapse;
+    text-transform: uppercase;
+}
+
+.zag_tabl{
+    border-style: solid none solid none;
+    border-color: #898989;
+    color:white;
+    margin: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20pt;
+}
+
+.pink_table{
+    color: #AE1FC9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20pt;
+}
+
+.str_table{
+    border-style: solid none solid none;
+    border-color: #898989;
+}
+
+.workl{
+    background: url(images/gallery.png);
+    height: auto;
+    width: 100%;
+    background-size: 100%;
+}
